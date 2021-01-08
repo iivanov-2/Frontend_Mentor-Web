@@ -86,11 +86,11 @@ body {
   justify-content: center;
 }
 
-#number {
+.number {
   font-weight: 700;
 }
 
-#number_txt {
+.number_txt {
   color: hsl(227, 10%, 46%);
   margin-top: 0.6em;
 }
