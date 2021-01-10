@@ -33,12 +33,10 @@ body {
 .bottom_left,
 .bottom_mid,
 .bottom_right {
-  border: 1px solid black;
   margin: 0.5em;
 }
 
 .main_container {
-  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
