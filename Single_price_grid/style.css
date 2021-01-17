@@ -96,7 +96,7 @@ body {
 
 .third-container {
   height: 230px;
-  background-color: var(--Cyan);
+  background-color: hsl(179, 65%, 45%);
   padding: 1em 1.8em;
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
