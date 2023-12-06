@@ -152,7 +152,16 @@ section {
         text-align: center;
         color: hsl(0, 0%, 100%);
         margin: 2.5em auto 0 auto;
-        /* height: 4em; */
+    }
+
+    .button:hover {
+        background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        cursor: pointer;
+    }
+
+    .button:active {
+        background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        cursor: pointer;
     }
 
     .button p {
