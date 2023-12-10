@@ -1,0 +1,193 @@
+:root {
+    --dark_cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very_dark_blue: hsl(212, 21%, 14%);
+    --dakr_grayish_blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --fs-14: 0.875rem
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: var(--fs-14);
+    background-color: var(--cream);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    /* background-color: black; */
+    width: calc(100% - 46.25rem);
+    height: 60%;
+    border-radius: 1rem;
+    display: flex;
+
+}
+
+.left {
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem 0 0 1rem;
+
+}
+
+.right {
+    width: 100%;
+    height: 100%;
+    /* padding: 1.5rem; */
+    background-color: var(--white);
+    border-radius: 0 1rem 1rem 0;
+}
+
+.right div {
+    padding: 1.5rem;
+}
+
+.right h1 {
+    font-size: 2.5rem;
+    width: 80%;
+    line-height: 2.3rem;
+    font-family: Fraunces, sans-serif;
+    /* font-weight: 800; */
+    /* font-family: montserrat, sans-serif; */
+}
+
+.right div p:nth-of-type(1) {
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    color: var(--dakr_grayish_blue);
+    font-weight: 500;
+}
+
+.right div p:nth-of-type(2) {
+    width: 80%;
+    color: var(--dakr_grayish_blue);
+    font-size: var(--fs-14);
+    line-height: 1.7rem;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+/* .right div p:nth-of-type(3) {} */
+
+.right div p:nth-of-type(3) span:first-child {
+    color: var(--dark_cyan);
+    font-size: 2.3rem;
+    font-weight: 700;
+    font-family: "Fraunces", sans-serif;
+}
+
+.right div p:nth-of-type(3) span:last-child {
+    color: var(--dakr_grayish_blue);
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: line-through;
+    margin: 0.9rem 0 0 2rem;
+    height: inherit;
+    position: absolute;
+}
+
+.button {
+    background-color: var(--dark_cyan);
+    width: 100%;
+    height: 1rem;
+    color: var(--white);
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin: 1rem 0 0 0;
+    padding: 0;
+}
+
+.button img {
+    position: absolute;
+    margin: -0.5rem 0 0 -3.4rem;
+}
+
+.button span {
+    position: absolute;
+    margin: -0.5rem 0 0 -1.7rem;
+    /* color: var(--white); */
+
+}
+
+@media(max-width: 1370px) {
+    .wrapper {
+        /* background-color: black; */
+        width: calc(100% - 2rem);
+        height: calc(100% - 4rem);
+        margin-inline: auto;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        /* flex-grow: 0; */
+    }
+
+    .left {
+        width: 100%;
+        height: 80%;
+        background-image: url(./images/image-product-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        /* background-size: cover; */
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .right {
+        width: 100%;
+        height: 100%;
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    .right h1 {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        /* width: 80%; */
+        /* line-height: 2.3rem; */
+        margin: 0.5rem 0 0 0;
+    }
+
+    .right div p:nth-of-type(1) {
+        width: 100%;
+        color: var(--dakr_grayish_blue);
+        text-align: left;
+        margin: 0;
+    }
+
+    .right div p:nth-of-type(2) {
+        width: 100%;
+        color: var(--dakr_grayish_blue);
+        font-size: var(--fs-14);
+        line-height: 1.45rem;
+        text-align: left;
+        margin: 0;
+    }
+
+    .right div p:nth-of-type(3) {
+        margin: 1rem 0 0 0;
+    }
+}
