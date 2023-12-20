@@ -1,0 +1,46 @@
+:root {
+    --soft_blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main_BG: hsl(217, 54%, 11%);
+    /* --card_BG: hsl(216, 50%, 16%); */
+    --card_BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 21%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --fs-18: 0.888rem
+}
+
+/* html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+} */
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--main_BG);
+}
+
+.card__bg {
+    background-color: var(--card_BG);
+}
+
+p {
+    color: var(--soft_blue);
+}
+
+.price {
+    color: var(--cyan);
+}
+
+.just__text {
+    color: var(--soft_blue);
+}
+
+hr {
+    background-color: var(--line);
+}
